@@ -1,0 +1,633 @@
+/* =========================================
+   AI MOCK INTERVIEW
+   PROFESSIONAL WEBSITE DESIGN
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color: #172033;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef6ff 0%,
+            #ffffff 50%,
+            #f3efff 100%
+        );
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    width: 100%;
+
+    padding: 20px 7%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    border-bottom: 1px solid #e5e7eb;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 21px;
+
+    font-weight: 800;
+
+    color: #1d4ed8;
+}
+
+.nav-links {
+    display: flex;
+
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+
+    color: #475569;
+
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    max-width: 1200px;
+
+    margin: auto;
+
+    min-height: 620px;
+
+    padding: 80px 30px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.badge {
+    display: inline-block;
+
+    padding: 9px 15px;
+
+    margin-bottom: 20px;
+
+    border-radius: 30px;
+
+    background: #dbeafe;
+
+    color: #1d4ed8;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+.hero h1 {
+    font-size: 58px;
+
+    line-height: 1.08;
+
+    letter-spacing: -2px;
+
+    color: #172033;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #2563eb;
+}
+
+.hero-text {
+    max-width: 570px;
+
+    color: #64748b;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================================
+   INTERVIEW CARD
+========================================= */
+
+.interview-card {
+    max-width: 520px;
+
+    padding: 28px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 15px 40px rgba(37, 99, 235, 0.10);
+}
+
+.interview-card h2 {
+    color: #172033;
+
+    margin-bottom: 8px;
+}
+
+.interview-card p {
+    color: #64748b;
+
+    line-height: 1.6;
+
+    margin-bottom: 22px;
+}
+
+.interview-card label {
+    display: block;
+
+    color: #334155;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    margin-bottom: 8px;
+}
+
+.interview-card select {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    color: #334155;
+
+    font-size: 16px;
+
+    outline: none;
+
+    margin-bottom: 15px;
+}
+
+.interview-card select:focus {
+    border-color: #2563eb;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.primary-button,
+.history-button {
+    width: 100%;
+
+    padding: 14px 20px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.primary-button {
+    color: white;
+
+    background: #2563eb;
+
+    margin-bottom: 10px;
+}
+
+.primary-button:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+}
+
+.history-button {
+    color: #2563eb;
+
+    background: #eff6ff;
+
+    border: 1px solid #bfdbfe;
+}
+
+.history-button:hover {
+    background: #dbeafe;
+}
+
+
+/* =========================================
+   AI VISUAL
+========================================= */
+
+.hero-visual {
+    min-height: 500px;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.ai-circle {
+    width: 330px;
+
+    height: 330px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #dbeafe,
+            #ede9fe
+        );
+
+    box-shadow:
+        0 0 0 25px rgba(219, 234, 254, 0.45),
+        0 25px 70px rgba(37, 99, 235, 0.18);
+}
+
+.robot {
+    font-size: 130px;
+}
+
+
+/* =========================================
+   FLOATING CARDS
+========================================= */
+
+.floating-card {
+    position: absolute;
+
+    padding: 13px 18px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 12px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    color: #334155;
+
+    box-shadow:
+        0 10px 25px rgba(15, 23, 42, 0.10);
+}
+
+.card-one {
+    top: 90px;
+
+    left: 10px;
+}
+
+.card-two {
+    top: 220px;
+
+    right: 0;
+}
+
+.card-three {
+    bottom: 95px;
+
+    left: 50px;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.features {
+    max-width: 1150px;
+
+    margin: 40px auto;
+
+    padding: 70px 30px;
+}
+
+.features > h2 {
+    text-align: center;
+
+    font-size: 34px;
+
+    color: #172033;
+
+    margin-bottom: 12px;
+}
+
+.section-subtitle {
+    text-align: center;
+
+    color: #64748b;
+
+    font-size: 17px;
+
+    margin-bottom: 45px;
+}
+
+.feature-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.feature-card {
+    padding: 28px 22px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 16px;
+
+    text-align: center;
+
+    transition: 0.25s;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.05);
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #bfdbfe;
+
+    box-shadow:
+        0 15px 35px rgba(37, 99, 235, 0.10);
+}
+
+.feature-icon {
+    font-size: 38px;
+
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    color: #1e3a8a;
+
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: #64748b;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    margin-top: 40px;
+
+    padding: 45px 20px;
+
+    text-align: center;
+
+    background: #172033;
+
+    color: white;
+}
+
+footer h3 {
+    font-size: 20px;
+
+    margin-bottom: 12px;
+}
+
+footer p {
+    color: #cbd5e1;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+footer .copyright {
+    margin-top: 15px;
+
+    color: #94a3b8;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        padding-top: 55px;
+    }
+
+    .hero-content {
+        margin: auto;
+    }
+
+    .hero-text {
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+    .interview-card {
+        margin: auto;
+
+        text-align: left;
+    }
+
+    .hero-visual {
+        min-height: 420px;
+    }
+
+    .feature-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 0;
+    }
+
+    .navbar {
+        padding: 17px 20px;
+    }
+
+    .logo {
+        font-size: 17px;
+    }
+
+    .nav-links {
+        gap: 14px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 45px 18px;
+
+        gap: 30px;
+    }
+
+    .hero h1 {
+        font-size: 39px;
+
+        letter-spacing: -1px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .interview-card {
+        padding: 22px;
+    }
+
+    .ai-circle {
+        width: 240px;
+
+        height: 240px;
+    }
+
+    .robot {
+        font-size: 90px;
+    }
+
+    .floating-card {
+        font-size: 12px;
+
+        padding: 10px 12px;
+    }
+
+    .card-one {
+        left: 0;
+
+        top: 60px;
+    }
+
+    .card-two {
+        right: 0;
+
+        top: 190px;
+    }
+
+    .card-three {
+        left: 15px;
+
+        bottom: 55px;
+    }
+
+    .features {
+        padding: 45px 18px;
+    }
+
+    .features > h2 {
+        font-size: 28px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}
